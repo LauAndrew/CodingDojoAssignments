@@ -1,0 +1,206 @@
+#container{
+	background-color: #2E5173;
+	height: 930px;
+	width: 970px;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+
+#header{
+	display: flex;
+	padding-right: 20px;
+}
+
+#header img {
+	flex: 1;
+	margin-top:	10px;
+	margin-right: 100px;
+	width: 500px; 
+	height: 130px;
+}
+
+#searchbar{
+	color: white;
+	font-size: 14px;
+	flex: 1;
+	margin-left: 0px;
+	margin-top: 10px;
+}
+
+#navbar{
+	box-shadow: 3px 3px black;
+	width: 850px;
+	height: 25px;
+	background-color: #507CA8;
+	margin-left: 45px;
+	padding: 10px;
+	border-radius: 5px;
+	margin-bottom: 10px;
+}
+
+#navbar li{
+	display: inline-block;
+	padding: 0px 30px;
+	color: white;
+	font-size: 20px;
+}
+
+#about{
+	padding: 0px 30px;
+}
+
+#aboutlinks{
+	background-color:#2E5173;
+	color: white;
+	margin-left: 70px;
+	text-align: center;
+	padding-top: 20px;
+	padding-left: 20px;
+	display: inline-block;
+	vertical-align: top;
+}
+
+#aboutlinks a{
+	text-align: center;
+	display: inline-block;
+	list-style-type: none;
+	margin-left: 5px;
+	color: white;
+}
+
+#aboutsum{
+	text-align: center;
+	display: inline-block;
+	background-color: #2E5173;
+	color: white;
+	width: 65%;
+	padding: 10px;
+}
+
+#aboutsum p{
+	background-color: #2E5173;
+	width: 630px;
+	margin-left: 10px;
+}
+
+#info{
+	display: flex;
+	padding: 0px;
+}
+
+#started{
+	flex: 1;
+	background-color: #FFFFFF;
+	text-align: center;
+	padding-left: 20px;
+}
+
+#started p{
+	margin-top: 0px;
+	margin-left: 100px;
+	background-color: #FFFFFF;
+	width: 250px;
+	padding-left: 20px;
+}
+
+#applications{
+	flex: 1;
+	background-color: #FFFFFF;
+	text-align: center;
+	width: 75%;
+}
+
+#applications p{
+	margin-top: 0px;
+	margin-left: 40px;
+	background-color: #FFFFFF;
+	width: 350px;
+}
+
+#footer{
+	margin-top: 40px;
+	width: 930px;
+	height: 30px;
+	background-color: #2E5173;
+}
+
+#footer li{
+	margin-left: 62px;
+	display: inline-block;
+	padding: 0px 30px;
+	color: #9ABBDB;
+}
+
+#footer p{
+	margin-left: 350px;
+	color: #9ABBDB;
+	font-size: 10px;
+}
+
+.highlight{
+	color: #EAC957;
+}
+
+.makeitblue{
+	color: #9ABBDB;
+}
+
+.highlightblue{
+	width: 55%;
+	margin-left: 87px;
+}
+
+span.highlight{
+	color: #9ABBDB;
+}
+
+#started h5{
+	height: 5px;
+	background-color: #9ABBDB;
+	margin-right: 10px;
+	margin-left: 90px;
+	margin-bottom: 10px;
+}
+
+#applications h5{
+	height: 5px;
+	background-color: #9ABBDB;
+	margin-right: 50px;
+	margin-left: 20px;
+	margin-bottom: 10px;
+}
+
+#gobut{
+	display: inline-block;
+	background-color: blue;
+	border-radius: 5px;
+	color: white;
+}
+
+#gbox{
+	display: inline-block;
+	background-color: #444444;
+	box-shadow: 3px 3px black;
+	padding: 15px 35px;
+	border-radius: 5px;
+	margin-left: 110px;
+}
+
+#aboutlinks li{
+    list-style-type: none;
+    margin-bottom: 10px;
+}
+
+#aboutlinks span{
+	color: #edc946;
+	font-size: 10px;
+}
+
+#searchbar p{
+	margin-bottom: 0px;
+	margin-left: 180px;
+}
+
+span.bar{
+	color: black;
+}

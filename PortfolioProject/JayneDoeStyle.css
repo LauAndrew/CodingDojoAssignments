@@ -1,0 +1,109 @@
+#container{
+	background-color: #57424B;
+	width: 1000px;
+	display: block;
+}
+
+#header{
+	width: 100%;
+	background-color: #F8F8F8;
+	padding: 10px 0px 10px 0px;
+}
+#upper_container{
+	display: flex;
+	width: 100%;
+}
+#profilepic{
+	flex: 1;
+	width:35%;
+	height: 35%;
+	border:solid 3px #FFFFFF;
+	margin: 2%;
+}
+
+#a{
+	flex: 1;
+	margin: 0px;
+    vertical-align: top;
+	width: 306px;
+	height: 203px;
+	background-color: #AEAEB3;
+	height: 100px;
+	margin-top: 2%;
+	margin-right: 2%;
+}
+
+#b{
+	background-color: white;
+}
+
+#column{
+	display: flex;
+}
+.Lamode{
+	flex: 1;
+	margin: 1%;
+	vertical-align: top;
+	width: 300px;
+	background-color: #DBCDDB;
+}
+
+#LamodeTech{
+	background-color: #DBCDDB;
+
+}
+
+.Familycontacts{
+	flex: 1;
+	margin: 1%;
+	width: 300px;
+	background-color: #DBCDDB;
+}
+
+#Familycontactstech{
+	background-color: #DBCDDB;
+}
+
+.fiveeleven{
+	flex: 1;
+	margin: 1%;
+	display: inline-block;
+	width: 300px;
+	background-color: #DBCDDB;
+}
+
+#fiveelevenTech{
+	background-color: #DBCDDB;
+}
+
+h1{
+	display: inline;
+	margin: 0px;
+	padding-left: 20px;
+	background-color: #F8F8F8;
+}
+
+h2{
+	background-color: #898795
+}
+
+h3{
+	display: inline;
+	padding-left: 350px;
+	background-color: #F8F8F8;
+}
+
+body{
+	margin: 0px;
+
+}
+
+.footer{
+	background-color: white;
+	text-align: center;
+	font-size: 12px;
+}
+
+.footer h5{
+	display: inline-block;
+}
