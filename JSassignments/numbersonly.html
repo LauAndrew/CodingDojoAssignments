@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+	<script> 
+	// var numbersOnly = function(items) { *This works too*
+	function numbersOnly(items){
+
+  	var placeHolder = [];
+
+  	for(var i = 0; i < items.length; i++) {
+
+		if (typeof items[i] == "number"){
+      placeHolder.push(items[i]);
+    }
+  }
+
+  return placeHolder;
+
+}
+
+var tests = numbersOnly([5, 7, "apple", 3, "orange", "kiwi", 8]);
+
+console.log(tests);
+
+	</script>
+<body>
+
+</body>
+</html>

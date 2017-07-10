@@ -1,0 +1,299 @@
+Andrews-MacBook-Pro:~ andrew$ ls
+Applications	Documents	Library		Music		Public
+Desktop		Downloads	Movies		Pictures
+Andrews-MacBook-Pro:~ andrew$ mkdir DojoAssignments
+Andrews-MacBook-Pro:~ andrew$ ls
+Applications	Documents	Downloads	Movies		Pictures
+Desktop		DojoAssignments	Library		Music		Public
+Andrews-MacBook-Pro:~ andrew$ cd DojoAssignments/
+Andrews-MacBook-Pro:DojoAssignments andrew$ mkdir WebFundamentals Python MEAN RUBY iOS netCore
+Andrews-MacBook-Pro:DojoAssignments andrew$ ls
+MEAN		RUBY		iOS
+Python		WebFundamentals	netCore
+Andrews-MacBook-Pro:DojoAssignments andrew$ cd MEAN
+Andrews-MacBook-Pro:MEAN andrew$ touch about.txt
+Andrews-MacBook-Pro:MEAN andrew$ mv about.txt ../MEAN
+mv: about.txt and ../MEAN/about.txt are identical
+Andrews-MacBook-Pro:MEAN andrew$ ls
+about.txt
+Andrews-MacBook-Pro:MEAN andrew$ cd ..
+Andrews-MacBook-Pro:DojoAssignments andrew$ cd RUBY
+Andrews-MacBook-Pro:RUBY andrew$ touch about.txt
+Andrews-MacBook-Pro:RUBY andrew$ ls
+about.txt
+Andrews-MacBook-Pro:RUBY andrew$ cd iOS
+-bash: cd: iOS: No such file or directory
+Andrews-MacBook-Pro:RUBY andrew$ cd ..
+Andrews-MacBook-Pro:DojoAssignments andrew$ ls
+MEAN		RUBY		iOS
+Python		WebFundamentals	netCore
+Andrews-MacBook-Pro:DojoAssignments andrew$ cd iOS/
+Andrews-MacBook-Pro:iOS andrew$ touch. about.txt
+-bash: touch.: command not found
+Andrews-MacBook-Pro:iOS andrew$ touch about.txt
+Andrews-MacBook-Pro:iOS andrew$ ls
+about.txt
+Andrews-MacBook-Pro:iOS andrew$ cd ..
+Andrews-MacBook-Pro:DojoAssignments andrew$ cd Python/
+Andrews-MacBook-Pro:Python andrew$ touch about.txt
+Andrews-MacBook-Pro:Python andrew$ cd ..
+Andrews-MacBook-Pro:DojoAssignments andrew$ cd ..
+Andrews-MacBook-Pro:~ andrew$ cd DojoAssignments/
+Andrews-MacBook-Pro:DojoAssignments andrew$ ls
+MEAN		RUBY		iOS
+Python		WebFundamentals	netCore
+Andrews-MacBook-Pro:DojoAssignments andrew$ cd WebFundamentals/
+Andrews-MacBook-Pro:WebFundamentals andrew$ ls
+Andrews-MacBook-Pro:WebFundamentals andrew$ touch about.txt
+Andrews-MacBook-Pro:WebFundamentals andrew$ ls
+about.txt
+Andrews-MacBook-Pro:WebFundamentals andrew$ touch about.txt
+Andrews-MacBook-Pro:WebFundamentals andrew$ cd ..
+Andrews-MacBook-Pro:DojoAssignments andrew$ cd netCore/
+Andrews-MacBook-Pro:netCore andrew$ ls
+Andrews-MacBook-Pro:netCore andrew$ touch about.txt
+Andrews-MacBook-Pro:netCore andrew$ ls
+about.txt
+Andrews-MacBook-Pro:netCore andrew$ cd ..
+Andrews-MacBook-Pro:DojoAssignments andrew$ ls
+MEAN		RUBY		iOS
+Python		WebFundamentals	netCore
+Andrews-MacBook-Pro:DojoAssignments andrew$ cd WebFundamentals/
+Andrews-MacBook-Pro:WebFundamentals andrew$ ls
+about.txt
+Andrews-MacBook-Pro:WebFundamentals andrew$ mkdir Git HTML CSS Javascript
+Andrews-MacBook-Pro:WebFundamentals andrew$ ls
+CSS		Git		HTML		Javascript	about.txt
+Andrews-MacBook-Pro:WebFundamentals andrew$ cd CSS
+Andrews-MacBook-Pro:CSS andrew$ touch about.txt
+Andrews-MacBook-Pro:CSS andrew$ ls
+about.txt
+Andrews-MacBook-Pro:CSS andrew$ cd..
+-bash: cd..: command not found
+Andrews-MacBook-Pro:CSS andrew$ cd ..
+Andrews-MacBook-Pro:WebFundamentals andrew$ cd Git
+Andrews-MacBook-Pro:Git andrew$ touch about.txt
+Andrews-MacBook-Pro:Git andrew$ cd..
+-bash: cd..: command not found
+Andrews-MacBook-Pro:Git andrew$ cd ..
+Andrews-MacBook-Pro:WebFundamentals andrew$ cd HTML
+Andrews-MacBook-Pro:HTML andrew$ touch about.txt
+Andrews-MacBook-Pro:HTML andrew$ ls
+about.txt
+Andrews-MacBook-Pro:HTML andrew$ cd ..
+Andrews-MacBook-Pro:WebFundamentals andrew$ cd Javascript/
+Andrews-MacBook-Pro:Javascript andrew$ touch about.txt
+Andrews-MacBook-Pro:Javascript andrew$ ls
+about.txt
+Andrews-MacBook-Pro:Javascript andrew$ cd ..
+Andrews-MacBook-Pro:WebFundamentals andrew$ cd ..
+Andrews-MacBook-Pro:DojoAssignments andrew$ ls
+MEAN		RUBY		iOS
+Python		WebFundamentals	netCore
+Andrews-MacBook-Pro:DojoAssignments andrew$ ls -R
+MEAN		RUBY		iOS
+Python		WebFundamentals	netCore
+
+./MEAN:
+about.txt
+
+./Python:
+about.txt
+
+./RUBY:
+about.txt
+
+./WebFundamentals:
+CSS		Git		HTML		Javascript	about.txt
+
+./WebFundamentals/CSS:
+about.txt
+
+./WebFundamentals/Git:
+about.txt
+
+./WebFundamentals/HTML:
+about.txt
+
+./WebFundamentals/Javascript:
+about.txt
+
+./iOS:
+about.txt
+
+./netCore:
+about.txt
+Andrews-MacBook-Pro:DojoAssignments andrew$ cd ~
+Andrews-MacBook-Pro:~ andrew$ ls
+Applications	Documents	Downloads	Movies		Pictures
+Desktop		DojoAssignments	Library		Music		Public
+Andrews-MacBook-Pro:~ andrew$ cd Documents/
+Andrews-MacBook-Pro:Documents andrew$ touch assignments.txt
+Andrews-MacBook-Pro:Documents andrew$ clear
+
+Andrews-MacBook-Pro:Documents andrew$ cd ~
+Andrews-MacBook-Pro:~ andrew$ ls
+Applications	Documents	Downloads	Movies		Pictures
+Desktop		DojoAssignments	Library		Music		Public
+Andrews-MacBook-Pro:~ andrew$ cd Desktop/
+Andrews-MacBook-Pro:Desktop andrew$ clear
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Andrews-MacBook-Pro:Desktop andrew$ mkdir gittest
+Andrews-MacBook-Pro:Desktop andrew$ cd gittest/
+Andrews-MacBook-Pro:gittest andrew$ git init
+Initialized empty Git repository in /Users/andrew/Desktop/gittest/.git/
+Andrews-MacBook-Pro:gittest andrew$ touch index.html styles.css aboutMe.txt
+Andrews-MacBook-Pro:gittest andrew$ git add .
+Andrews-MacBook-Pro:gittest andrew$ git status
+On branch master
+
+Initial commit
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+	new file:   aboutMe.txt
+	new file:   index.html
+	new file:   styles.css
+
+Andrews-MacBook-Pro:gittest andrew$ git commit
+
+[1]+  Stopped                 git commit
+Andrews-MacBook-Pro:gittest andrew$ git commit -m "Initial Commit"
+[master (root-commit) 3b76985] Initial Commit
+ Committer: Andrew Lau <andrew@Andrews-MacBook-Pro.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 aboutMe.txt
+ create mode 100644 index.html
+ create mode 100644 styles.css
+Andrews-MacBook-Pro:gittest andrew$ git add .
+Andrews-MacBook-Pro:gittest andrew$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	modified:   aboutMe.txt
+
+Andrews-MacBook-Pro:gittest andrew$ git commit -m "updated aboutMe"
+[master d8494ed] updated aboutMe
+ Committer: Andrew Lau <andrew@Andrews-MacBook-Pro.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 1 insertion(+)
+Andrews-MacBook-Pro:gittest andrew$ git add .
+Andrews-MacBook-Pro:gittest andrew$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	modified:   aboutMe.txt
+
+Andrews-MacBook-Pro:gittest andrew$ git commit -m "added favorite movie to aboutMe"
+[master f0fa96c] added favorite movie to aboutMe
+ Committer: Andrew Lau <andrew@Andrews-MacBook-Pro.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+Andrews-MacBook-Pro:gittest andrew$ git log
+commit f0fa96c16847243d502a4852290fa8725efe65a1 (HEAD -> master)
+Author: Andrew Lau <andrew@Andrews-MacBook-Pro.local>
+Date:   Tue Jun 20 13:45:19 2017 -0700
+
+    added favorite movie to aboutMe
+
+commit d8494ed3dec53d4863c984c29a6fb542f087bf3e
+Author: Andrew Lau <andrew@Andrews-MacBook-Pro.local>
+Date:   Tue Jun 20 13:43:35 2017 -0700
+
+    updated aboutMe
+
+commit 3b76985b426f558c8abc0af60e6dc9e5cfdffd4a
+Author: Andrew Lau <andrew@Andrews-MacBook-Pro.local>
+Date:   Tue Jun 20 13:41:25 2017 -0700
+
+    Initial Commit
+Andrews-MacBook-Pro:gittest andrew$ git revert d8494ed3dec53d4863c984c29a6fb542f087bf3e
+error: could not revert d8494ed... updated aboutMe
+hint: after resolving the conflicts, mark the corrected paths
+hint: with 'git add <paths>' or 'git rm <paths>'
+hint: and commit the result with 'git commit'
+Andrews-MacBook-Pro:gittest andrew$ git status
+On branch master
+You are currently reverting commit d8494ed.
+  (fix conflicts and run "git revert --continue")
+  (use "git revert --abort" to cancel the revert operation)
+
+Unmerged paths:
+  (use "git reset HEAD <file>..." to unstage)
+  (use "git add <file>..." to mark resolution)
+
+	both modified:   aboutMe.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+Andrews-MacBook-Pro:gittest andrew$ git add .
+Andrews-MacBook-Pro:gittest andrew$ git commit -m "revert back"
+[master 9ff7556] revert back
+ Committer: Andrew Lau <andrew@Andrews-MacBook-Pro.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 1 insertion(+), 2 deletions(-)
+Andrews-MacBook-Pro:gittest andrew$ 

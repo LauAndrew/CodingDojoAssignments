@@ -1,0 +1,45 @@
+#wrapper{
+
+	width:100%;
+
+}
+
+#pokemonS{
+	display: inline-block;
+	width: 70em;
+	
+}
+
+#pokedex{
+	padding:10px;
+	position: fixed;
+	top:30px;
+	left:70%;
+	width: 30em;
+	height: 40em;
+	border: red solid 30px;
+	border-bottom: red solid 60px;
+}
+
+#pokeimg{
+	display: block;
+    margin: auto;
+    width: 30%;
+}
+
+#pokename{
+
+	text-align: center;
+	font-size: 40px;
+}
+
+.pokedata{
+	text-align: center;
+	font-size: 20px;
+}
+
+.title{
+	color: blue;
+	text-align: left;
+	font-size: 30px;
+}

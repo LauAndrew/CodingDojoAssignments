@@ -1,0 +1,20 @@
+#wrapper{
+	background-color: #009AC7;
+	width: 1000px;
+	height: 200px;
+}
+
+h1 {
+	text-align: center;
+}
+
+#cityinput{
+	margin-left: 80px;
+}
+
+#result{
+	/*margin-top: 10px;*/
+	font-size: 30px;
+	/*margin-left: 80px;*/
+	text-align: center;
+}

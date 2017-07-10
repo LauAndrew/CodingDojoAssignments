@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<title> Weather Forcast </title>
+		<link rel="stylesheet" type="text/css" href="weatherstyle.css">
+		<script src= "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+			<script>
+			function update(city){
+			$.get("http://api.openweathermap.org/data/2.5/weather?APPID=6b497de824d14d993c7e23f88f249bc3&q="+ city, function(data) {
+					$("#result").html(Math.floor((data.main.temp*9/5)-459.67)+" degrees right now.");
+							});
+			}
+			$(document).ready(function(){
+
+
+			});
+			</script>
+
+	</head>
+<body>
+	<div id=wrapper>
+		<div id="info">
+			<h1> The Weather Forcast! </h1>
+			<ul>
+				<ol>Please input city name in box below.</ol>
+				<ol>Hit "Enter" on you computer to find that city's temperature.</ol>
+			</ul>
+		</div>
+		<input id="cityinput" onchange="update(this.value);">
+		<div id="result"></div>
+	</div>
+</body>
+</html>
+		
+
+
+
+<!-- <input id="cityinput" onchange="update(this.value);">
+<div id="result"></div> -->

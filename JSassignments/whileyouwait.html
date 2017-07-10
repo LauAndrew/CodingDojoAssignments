@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		var daysUntilMyBirthday = 60;
+		function countbirthday (days) {
+			for(var daysUntilMyBirthday = 60; daysUntilMyBirthday >= 0; daysUntilMyBirthday--){
+
+			  if (daysUntilMyBirthday >= 30){
+			    console.log(daysUntilMyBirthday, " days and still not my birthday yet...");
+			  }
+
+			  else if (daysUntilMyBirthday < 30 && daysUntilMyBirthday > 5 ) {
+			    console.log(daysUntilMyBirthday, " days and finally getting closer to my birthday!");
+			  }
+
+			  else if (daysUntilMyBirthday <= 5 && daysUntilMyBirthday >= 1) {
+			    console.log(daysUntilMyBirthday +  " day(s) until my birthday")
+
+			  }
+
+			  else{
+			  	return "It's MY BIRTHDAY!!";
+			  }
+			}
+		}
+		var bday = countbirthday(daysUntilMyBirthday);
+		console.log(bday);
+	</script>
+</head>
+<body>
+
+</body>
+</html>

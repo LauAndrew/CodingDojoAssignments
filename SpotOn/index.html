@@ -1,0 +1,24 @@
+<html>
+      <head>
+            <meta charset="UTF-8">
+            <meta author="JRG">
+            <link rel="stylesheet" type="text/css" href="spoton.css">
+            <script src="first.js"></script>
+
+      </head>
+      <body>
+            <div id='wyswyg'></div>
+            <div id="tab" onmouseover="showme();" onmouseout="hideme();">
+                <div id="button_container">
+                    <input type="button" value="Save file as..." onclick="saveme(document.getElementById('writ').value);" class="buttons">
+                    <input type="button" value="New..." onclick="makenew();record(htmlDecode(template));" class="buttons">
+                    <input type="button" value="Undo" onclick="goback();" class="buttons">
+                </div>
+                <textarea name="msg" cols="39" rows="22" onkeyup="document.getElementById('wyswyg').innerHTML=this.value;record(this.value);" id="writ">
+              </textarea>
+          </div>
+
+          <script src="second.js"></script>
+
+        </body>
+</html>

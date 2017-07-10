@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+	<script type="text/javascript">
+		function slots(quarters){
+			for(quarters; quarters >= 0; quarters--){
+				var winningNumber = Math.trunc(Math.random() * 101)
+				if(quarters > 0){
+					if(winningNumber===21){
+						var payout = Math.floor(Math.random() * 50)+51;
+						return "You won! Your new total is " + (quarters += payout - 1) + " quarters! Ending game."
+					}
+					else {
+						console.log("YOU LOST, RESPINNING");
+					}
+				}
+				else {
+					return "NO MORE QUARTERS, YOUR BROKE. THANKS FOR PLAYING"
+				}
+			}
+		}
+		console.log(slots(50));	
+	</script>
+<body>
+
+</body>
+</html>
